@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 function AboutPage() {
   return (
-  <div className="about">
+  <Card className="about">
     <h1>About this project</h1>
     <p>
       This is a React App to leave feedback for a product or service
@@ -12,7 +12,7 @@ function AboutPage() {
     <p>
       <Link to="/">Back To Home</Link>
     </p>
-  </div>    
+  </Card>    
   )
 }
 
