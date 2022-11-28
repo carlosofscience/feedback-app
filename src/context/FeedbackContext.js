@@ -10,13 +10,16 @@ export const FeedbackProvider = ({children})=>{
     edit:false
   });
 
+  const API = "https://feedback-app-jserver.herokuapp.com";
+
+
   //on page load (use empty array for this and run once)
   useEffect(()=>{
     fetchFeedback()
   },[])
 
   const fetchFeedback = async ()=>{
-    const res =  await fetch(`/feedback?_sort=id&_order=desc`)
+    const res =  await fetch(`${API}/feedback?_sort=id&_order=desc`)
     const data = await res.json()
     setFeedback(data)
     setIsLoading(false)
@@ -25,14 +28,14 @@ export const FeedbackProvider = ({children})=>{
   const deleteFeedback = async (id)=>{
     if(window.confirm('Are you sure you want to delete this feedback?')) {
 
-      await fetch(`/feedback/${id}`, {method:'DELETE'})
+      await fetch(`${API}/feedback/${id}`, {method:'DELETE'})
       setFeedback(feedback.filter((item) => item.id !== id))
     }
   }
 
   const addFeedback = async (newFeedback)=>{
 
-    const res =  await fetch('/feedback', {
+    const res =  await fetch(`${API}/feedback`, {
       method:'POST',
       headers:{
         'content-Type':'application/json'
@@ -44,7 +47,7 @@ export const FeedbackProvider = ({children})=>{
   }
   
   const updateFeedback = async (id, updatedItem)=>{
-    const res = await fetch(`/feedback/${id}`, {method:'PUT', headers:{'Content-Type':"application/json"}, body: JSON.stringify(updatedItem)})
+    const res = await fetch(`${API}/feedback/${id}`, {method:'PUT', headers:{'Content-Type':"application/json"}, body: JSON.stringify(updatedItem)})
     const data = await res.json();
     setFeedback(feedback.map((item)=>item.id === id ? {...item, ...data}: item))
   }
