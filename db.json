@@ -1,3 +1,18 @@
 {
-  "feedback": []
+  "feedback": [{
+      "text": "Great service, my family love the place!",
+      "rating": 10,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "rating": 9,
+      "text": "Good and clean location, staff always friedly"
+    },
+    {
+      "id": 3,
+      "rating": 10,
+      "text": "Customer services was the best, definetly coming back :)"
+    }
+  ]
 }
