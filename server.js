@@ -13,6 +13,7 @@ server.use(middlewares);
 //     '/blog/:resource/:id/show': '/:resource/:id'
 // }))
 
+
 server.use(router)
 server.listen(port, () => {
   console.log("JSON Server is running");
