@@ -18,15 +18,15 @@ uses concurrently to combine the functionality of `npm run jserver` and add hot 
     "dev": "concurrently \"npm run jserver\" \"npm start\""
 
 
-## Objectives
+## Objective
 
-The objective of this project was to learn and practice React concepts such as:
+The project is intended to be used for learning and practicing React concepts such as:
 
 - Components, Props, State, Forms, Routes, Links, Icons.
 - Context API, useContext hook
 - APIs, HTTP Requests, and deployment using a variety of hostings.
 
-The project also implements changes introduced with `react-router-dom` v6 such as the replacement of Switch with Routes, in addition to other concepts that will be helpful to develop the frontend of future full-stack projects.
+Also, It implements changes introduced with `react-router-dom` v6 such as the replacement of Switch with Routes, in addition to other concepts that contribute to the development of full-stack projects.
 
 ### Technologies
 
