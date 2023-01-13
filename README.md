@@ -18,7 +18,7 @@ uses concurrently to combine the functionality of `npm run jserver` and add hot 
     "dev": "concurrently \"npm run jserver\" \"npm start\""
 
 
-## Technologies and Objectives
+## Objectives
 
 The objective of this project was to learn and practice React concepts such as:
 
@@ -28,10 +28,10 @@ The objective of this project was to learn and practice React concepts such as:
 
 The project also implements changes introduced with `react-router-dom` v6 such as the replacement of Switch with Routes, in addition to other concepts that will be helpful to develop the frontend of future full-stack projects.
 
-### technologies
+### Technologies
 
-* concurrently, JSON-server, Render & Netlify
+* Concurrently, JSON-server, Render & Netlify
 
-### technologies
+### More
 
-Images and more information can be found at: https://sandval.com/
+More information can be found at: https://sandval.com/
