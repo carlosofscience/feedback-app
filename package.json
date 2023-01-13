@@ -1,8 +1,29 @@
 {
+<<<<<<< HEAD
   "name": "json-server-deploy",
   "version": "1.0.0",
   "description": "Simple json database to deploy to the host of your choice",
   "main": "server.js",
+=======
+  "name": "feedback-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "concurrently": "^7.6.0",
+    "framer-motion": "^4.1.17",
+    "json-server": "^0.17.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
+    "react-router-dom": "^6.4.3",
+    "react-scripts": "5.0.1",
+    "uuid": "^9.0.0",
+    "web-vitals": "^2.1.4"
+  },
+>>>>>>> netlify-prod
   "scripts": {
     "start": "node server.js"
   },

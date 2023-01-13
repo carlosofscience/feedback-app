@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 # Deploy `json-server` to `{{ free hosting site }}`  
 
 > Instructions how to deploy the full fake REST API [json-server](https://github.com/typicode/json-server) to various free hosting sites. Should only be used in development purpose but can act as a simpler database for smaller applications.
+=======
+# feedback-app
+React Project to leave a review for products and services.
+>>>>>>> netlify-prod
 
 * [**Create your database**](#create-your-database)
 * [Deploy to **Heroku**](#deploy-to-heroku)
@@ -9,6 +14,7 @@
 
 ## Create your database
 
+<<<<<<< HEAD
 1. Press the green `Use this template`-button in the right corner
 2. Give your new repo a name and press the green `Create repository from template`-button
 3. Clone your newly created repository to your computer
@@ -174,3 +180,37 @@ You should be prompted to supply a password, this should be the pass to your acc
 
 Choose **App Services** in the sidebar to the left and the choose your app in the list that appears then go to **Deployment Credentials** to change your password for deployment:<br>
 https://docs.microsoft.com/en-us/azure/app-service/app-service-deployment-credentials
+=======
+### `npm run jserver`
+
+use to run a JSON server working as our temporary testing API, and handle crud operations for the feedback data. 
+
+    "jserver": "json-server --watch db.json --port 5000",
+
+### `npm run dev`
+
+uses concurrently to combine the functionality of `npm run jserver` and add hot reload to the react page after making any changes to the code.
+
+    "dev": "concurrently \"npm run jserver\" \"npm start\""
+
+
+## Technologies and Objectives
+
+The objective of this project was to learn and practice React concepts such as:
+
+- Components, Props, State, Forms, Routes, Links, Icons.
+- Context API, useContext hook
+- APIs, HTTP Requests, and deployment using a variety of hostings.
+
+The project also implements changes introduced with `react-router-dom` v6 such as the replacement of Switch with Routes, in addition to other concepts that will be helpful to develop the frontend of future full-stack projects.
+
+### technologies
+
+* concurrently, JSON-server, Render & Netlify
+
+### technologies
+
+Images and more information can be found at: https://sandval.com/
+
+
+>>>>>>> netlify-prod
