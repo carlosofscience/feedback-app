@@ -10,7 +10,7 @@ export const FeedbackProvider = ({children})=>{
     edit:false
   });
 
-  const API = "https://feedback-q4jq7na7s-carlosofscience.vercel.app";
+  const API = "https://feedback-app-sy4n.onrender.com"
 
 
   //on page load (use empty array for this and run once)

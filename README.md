@@ -1,75 +1,39 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# feedback-app
+React Project to leave a review for products and services.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run jserver`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+use to run a JSON server working as our temporary testing API, and handle crud operations for the feedback data. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    "jserver": "json-server --watch db.json --port 5000",
 
-### `npm test`
+### `npm run dev`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+uses concurrently to combine the functionality of `npm run jserver` and add hot reload to the react page after making any changes to the code.
 
-### `npm run build`
+    "dev": "concurrently \"npm run jserver\" \"npm start\""
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies and Objectives
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The objective of this project was to learn and practice React concepts such as:
 
-### `npm run eject`
+- Components, Props, State, Forms, Routes, Links, Icons.
+- Context API, useContext hook
+- APIs, HTTP Requests, and deployment using a variety of hostings.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The project also implements changes introduced with `react-router-dom` v6 such as the replacement of Switch with Routes, in addition to other concepts that will be helpful to develop the frontend of future full-stack projects.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### technologies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* concurrently, JSON-server, Render & Netlify
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### technologies
 
-## Learn More
+Images and more information can be found at: https://sandval.com/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# feedback-app
-React Project to leave a review for products and services
->>>>>>> b74a9f0e33001a3c5824e41b40e17f237343aa52
