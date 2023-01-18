@@ -34,4 +34,4 @@ Also, It implements changes introduced with `react-router-dom` v6 such as the re
 
 ### More
 
-More information can be found at: https://sandval.com/
+More information can be found at: https://sandval.com/projects/feedbackapp
